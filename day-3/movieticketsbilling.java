@@ -45,6 +45,15 @@ public class Main
         double fdiscount = total * discountprice;
         double finalamount = total - fdiscount;
 
+        if (finalamount>1000)
+        {
+            System.out.println("you get free porpcorns");
+        }
+        else
+        {
+            System.out.println("you get nothing for free");
+        }
+
         System.out.println("Movie: " + moname);
         System.out.println("Tickets: " + tickets);
         System.out.println("Total before discount: " + total);
